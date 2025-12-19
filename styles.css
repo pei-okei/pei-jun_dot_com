@@ -1,0 +1,56 @@
+/* General settings */
+* {
+	/* Fixing the box-sizing issue */
+	/* Explanation: https://www.w3schools.com/css/css3_box-sizing.asp */
+	box-sizing: border-box;
+
+	/* Setting all default margin and padding to 0, because elements have pretty arbitary initial settings */
+	margin: 0;
+	padding: 0;
+
+	/* Smooth scrolliing when anchor links pressed */
+	scroll-behavior: smooth;
+}
+
+[contenteditable="true"]:active, [contenteditable="true"]:focus
+{
+    border:none;
+    outline:none;
+}
+
+
+
+/* Font faces */
+@font-face {
+    font-family: "Interstellar Medium";
+    src: url(ass/InterstellarMediumVF.ttf);
+}
+
+
+
+/* Titles */
+h1 {
+    font-family: futura;
+    font-size: 12vw;
+}
+
+h2 {
+    font-family: futura;
+    font-size: 3vw;
+}
+
+p {
+    color: black;
+    font-size: 2vw;
+    font-family:futura;
+}
+
+
+
+/* Landing page */
+.site-title {
+    font-size: 12vw;
+    color: #3b6f10;
+    font-family: "Interstellar Medium";
+    font-variation-settings: "STAR" 100;
+}
