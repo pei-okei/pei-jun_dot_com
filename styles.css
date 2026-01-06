@@ -31,18 +31,66 @@
 /* Titles */
 h1 {
     font-family: futura;
-    font-size: 12vw;
+    font-size: 36px;
 }
 
 h2 {
     font-family: futura;
-    font-size: 3vw;
+    font-size: 24px;
 }
 
 p {
     color: black;
-    font-size: 2vw;
+    font-size: 16px;
     font-family:futura;
+}
+
+a:link {
+    color: #ce34ae;
+}
+a:hover{
+    color:#4a831b;
+}
+a:active{
+    color:#3456ff;
+}
+a:visited{
+    color:#ce34ae;
+}
+
+.contacts-links:link {
+    color: #4a831b;
+}
+.contacts-links:hover{
+    color:#ce34ae;
+}
+.contacts-links:active{
+    color:#3456ff;
+}
+.contacts-links:visited{
+    color:#4a831b;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+
+/* flex wrapper for contact card */
+.flex-wrapper {
+    display: flex;
+    flex-flow:row wrap; 
+    align-content: center; 
+    justify-content: center;
+    gap: 50px;
+}
+
+.flex-children {
+    align-self: center;
+    display: inline-block;
+    padding: 26px; 
+    font-size: 16px;
+    flex: 1;
 }
 
 
@@ -53,4 +101,11 @@ p {
     color: #3b6f10;
     font-family: "Interstellar Medium";
     font-variation-settings: "STAR" 100;
+}
+
+.footer-text {
+    text-align: center; 
+    position: sticky;
+    font-size: 2px; 
+    top: calc(100vh - 24px);
 }
