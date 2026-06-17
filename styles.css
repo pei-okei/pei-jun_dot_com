@@ -10,6 +10,8 @@
 
 	/* Smooth scrolliing when anchor links pressed */
 	scroll-behavior: smooth;
+
+    font-family:futura;
 }
 
 [contenteditable="true"]:active, [contenteditable="true"]:focus
@@ -25,25 +27,69 @@
     font-family: "Interstellar Medium";
     src: url(ass/InterstellarMediumVF.ttf);
 }
+@font-face {
+    font-family: SCBitMap;
+    src: url(ass/NISC18030.ttf);
+}
+@font-face {
+    font-family: abordage;
+    src: url(ass/Abordage-Regular.otf);
+}
+@font-face {
+    font-family:avara-black;
+    src: url(ass/avara-black);
+}
+@font-face {
+    font-family:avara-bolditalic;
+    src: url(ass/avara-bolditalic);
+}
+@font-face {
+    font-family:avara-bold;
+    src: url(ass/avara-bold);
+}
+@font-face {
+    font-family:zara-regular;
+    src: url(ass/zara-regular.otf);
+}
+@font-face {
+    font-family:zara-oblique;
+    src: url(ass/zara-oblique.otf);
+}
+@font-face {
+    font-family:louise;
+    src: url(ass/louise-regular.otf);
+}
+@font-face {
+    font-family:mimoid;
+    src: url(ass/MimoidVF.ttf);
+}
 
 
 
 /* Titles */
 h1 {
-    font-family: futura;
-    font-size: 36px;
+    font-family: louise;
+    font-size: 64px;
 }
-
 h2 {
     font-family: futura;
     font-size: 24px;
+    font-weight:900;
 }
-
 p {
-    color: black;
     font-size: 16px;
     font-family:futura;
 }
+.blue-text {
+    color:#3456ff;
+}
+.intersperse{
+    font-family:futura;
+    color:inherit;
+    font-weight:700;
+    font-size:36px;
+}
+
 
 a:link {
     color: #ce34ae;
@@ -76,19 +122,24 @@ ul {
 }
 
 
+
+:root{
+    --landing-padding: 26px;
+}
+
 /* flex wrapper for contact card */
 .flex-wrapper {
     display: flex;
     flex-flow:row wrap; 
-    align-content: center; 
-    justify-content: center;
-    gap: 50px;
+    align-items: stretch; 
+    justify-content: space-around;
+    gap: 25px;
+    margin:var(--landing-padding);
+    padding:20px;
 }
-
 .flex-children {
     align-self: center;
     display: inline-block;
-    padding: 26px; 
     font-size: 16px;
     flex: 1;
 }
@@ -102,10 +153,14 @@ ul {
     font-family: "Interstellar Medium";
     font-variation-settings: "STAR" 100;
 }
-
-.footer-text {
+.dj-tag {
     text-align: center; 
     position: sticky;
     font-size: 2px; 
+    color:#8085c0;
     top: calc(100vh - 24px);
+    margin: 14px 14px 0px 0px;
+}
+.info-box-wrapper {
+    padding: calc(var(--landing-padding)/2) calc(var(--landing-padding)/2) var(--landing-padding) var(--landing-padding);
 }
