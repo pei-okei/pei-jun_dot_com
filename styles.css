@@ -10,8 +10,10 @@
 
 	/* Smooth scrolliing when anchor links pressed */
 	scroll-behavior: smooth;
-
-    font-family:futura;
+    font-family: VG5000;
+    font-weight:400;
+    letter-spacing: 0.05em;
+    font-size: 16px;
 }
 
 [contenteditable="true"]:active, [contenteditable="true"]:focus
@@ -25,69 +27,66 @@
 /* Font faces */
 @font-face {
     font-family: "Interstellar Medium";
-    src: url(ass/InterstellarMediumVF.ttf);
+    src: url(fonts/InterstellarMediumVF.ttf);
 }
 @font-face {
     font-family: SCBitMap;
-    src: url(ass/NISC18030.ttf);
+    src: url(fonts/NISC18030.ttf);
 }
 @font-face {
     font-family: abordage;
-    src: url(ass/Abordage-Regular.otf);
+    src: url(fonts/Abordage-Regular.otf);
 }
 @font-face {
-    font-family:avara-black;
-    src: url(ass/avara-black);
+    font-family: avara-black;
+    src: url(fonts/avara-black);
 }
 @font-face {
-    font-family:avara-bolditalic;
-    src: url(ass/avara-bolditalic);
+    font-family: avara-bolditalic;
+    src: url(fonts/avara-bolditalic);
 }
 @font-face {
-    font-family:avara-bold;
-    src: url(ass/avara-bold);
+    font-family: avara-bold;
+    src: url(fonts/avara-bold);
 }
 @font-face {
-    font-family:zara-regular;
-    src: url(ass/zara-regular.otf);
+    font-family: zara-regular;
+    src: url(fonts/zara-regular.otf);
 }
 @font-face {
-    font-family:zara-oblique;
-    src: url(ass/zara-oblique.otf);
+    font-family: zara-oblique;
+    src: url(fonts/zara-oblique.otf);
 }
 @font-face {
-    font-family:louise;
-    src: url(ass/louise-regular.otf);
+    font-family: louise;
+    src: url(fonts/louise-regular.otf);
 }
 @font-face {
-    font-family:mimoid;
-    src: url(ass/MimoidVF.ttf);
+    font-family: mimoid;
+    src: url(fonts/MimoidVF.ttf);
+}
+@font-face {
+    font-family: VG5000;
+    src: url(fonts/VG5000-Regular.otf)
 }
 
 
 
 /* Titles */
 h1 {
-    font-family: louise;
+    font-family: mimoid;
     font-size: 64px;
 }
 h2 {
-    font-family: futura;
     font-size: 24px;
+    font-family: mimoid;
     font-weight:900;
 }
 p {
     font-size: 16px;
-    font-family:futura;
 }
 .blue-text {
     color:#3456ff;
-}
-.intersperse{
-    font-family:futura;
-    color:inherit;
-    font-weight:700;
-    font-size:36px;
 }
 
 
@@ -124,7 +123,7 @@ ul {
 
 
 :root{
-    --landing-padding: 26px;
+    --landing-padding: 50px;
 }
 
 /* flex wrapper for contact card */
@@ -135,7 +134,6 @@ ul {
     justify-content: space-around;
     gap: 25px;
     margin:var(--landing-padding);
-    padding:20px;
 }
 .flex-children {
     align-self: center;
@@ -163,4 +161,12 @@ ul {
 }
 .info-box-wrapper {
     padding: calc(var(--landing-padding)/2) calc(var(--landing-padding)/2) var(--landing-padding) var(--landing-padding);
+}
+
+
+/* adjustments for small screens */
+@media only screen and (max-width: 520px){
+    .flex-children {
+        text-align: center;
+    }
 }
