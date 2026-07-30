@@ -149,7 +149,6 @@ ul {
     margin:var(--landing-padding);
 }
 .flex-children {
-    align-self: center;
     display: inline-block;
     font-size: 16px;
     flex: 1;
@@ -177,6 +176,13 @@ ul {
     padding-bottom: calc(var(--landing-padding)*0.75);
     padding-left: var(--landing-padding);
     padding-right: var(--landing-padding);
+}
+.contact-card {
+    background-color:#c0c9f6; 
+    border-radius: 20px; 
+    outline: 6px dotted #3456ff;
+    outline-offset: -3px;
+    padding: 32px;
 }
 
 
