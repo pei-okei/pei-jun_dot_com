@@ -169,7 +169,7 @@ ul {
     font-size: 2px; 
     color:#8085c0;
     top: calc(100vh - 24px);
-    margin: 14px 14px 0px 0px;
+    margin: 12px;
 }
 .info-box-wrapper {
     padding-top: 0;
@@ -187,8 +187,8 @@ ul {
 
 
 /* adjustments for small screens */
-@media only screen and (max-width: 520px){
-    .flex-children {
-        text-align: center;
+@media only screen and (max-width: 540px){
+    #image-of-me {
+        text-align:center;
     }
 }
