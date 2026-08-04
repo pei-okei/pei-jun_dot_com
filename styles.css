@@ -187,7 +187,7 @@ ul {
 
 
 /* adjustments for small screens */
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 500px){
     #image-of-me {
         text-align:center;
     }
