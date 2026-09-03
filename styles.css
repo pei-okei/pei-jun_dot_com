@@ -184,11 +184,20 @@ ul {
     outline-offset: -3px;
     padding: 32px;
 }
+.headline {
+    align-self: center; 
+    min-width:320px; 
+    flex-grow:2; 
+    text-align: right; 
+}
 
 
 /* adjustments for small screens */
 @media only screen and (max-width: 500px){
     #image-of-me {
+        text-align:center;
+    }
+    .headline {
         text-align:center;
     }
 }
