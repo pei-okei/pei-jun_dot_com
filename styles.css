@@ -132,10 +132,15 @@ ul {
     padding-inline-start: 20px;
 }
 
+.project-title{
+    font-size: 24px
+}
+
 
 
 :root{
     --landing-padding: 50px;
+    --research-margin: 40px;
 }
 
 /* flex wrapper for contact card */
@@ -151,6 +156,17 @@ ul {
     display: inline-block;
     align-self:center;
     flex: 1;
+}
+
+/* generic grid wrapper */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.grid-children {
+    display: inline-block;
 }
 
 
@@ -257,6 +273,13 @@ ul {
 }
 .nav-bar-link {
     text-decoration: none;
+}
+
+
+
+/* Astrophysics page */
+.project-box {
+    margin:var(--research-margin);
 }
 
 
