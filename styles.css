@@ -174,7 +174,7 @@ ul {
     align-self:stretch; /*TODO: take this out if needed*/
     text-align: left;
     background-color:#c0c9f6; 
-    /* border-radius: 20px;  */
+    border-radius: 20px; 
     outline: 6px dotted #3456ff;
     outline-offset: -3px;
     padding: 32px;
@@ -201,7 +201,7 @@ ul {
 #image-of-me img {
     height: 320px;
     background-color: #3456ff; 
-    /* border-radius: 25px;  */
+    border-radius: 25px; 
     border: 6px solid #ce34ae;
 }
 #education {
@@ -235,17 +235,21 @@ ul {
 }
 .nav-bar-icon {
     display: grid;
-    width: 85px; 
-    height: 85px; 
+    width: 200px; 
+    height: 25px; 
 
     text-align: center;
     place-items: center;
 
-    background-image: url("ass/green-star.png");
-    background-size:cover;
+    /* background-image: url("ass/star-1.svg");
+    background-size: 100% 100%; */
     /* background-color:blue; */
     color:#ce34ae;
     transition: 0.5s ;
+}
+.nav-bar-icon img {
+    /* TODO Fix this shit */
+    object-fit: fill;
 }
 .nav-bar-icon:hover {
     transform: rotate(5deg) scale(120%);
