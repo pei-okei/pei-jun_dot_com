@@ -15,21 +15,44 @@
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body style="background-color:#d4d6f8;">
+    <div class="nav-bar">
+        <div class="homepage-link" style="flex-grow:3;">
+            <a href=".">pei-jun.com</a>
+        </div>
+        
 
-    <div class="flex-wrapper">
+        <a href="https://en.wikipedia.org" target="_blank" class="nav-bar-link">
+            <div class="nav-bar-icon">
+                astro
+                physics
+            </div>
+        </a>
+        
+        <a href="https://en.wikipedia.org" target="_blank" class="nav-bar-link">
+            <div class="nav-bar-icon">
+                art &
+                design
+            </div>
+        </a>
+    </div>
+
+    <div class="flex-wrapper" style="gap: 100px; margin-top:0;">
         <div class="flex-children" id="image-of-me">
-            <img src="ass/me_with_cats.png" style="width:240px; background-color: #3456ff; border-radius: 25px; border: 6px solid #ce34ae;">
+            <!-- <img src="ass/me_with_cats.png"> -->
+            <img src="ass/pei-grad-pic.png">
         </div>
 
-        <div class="flex-children headline">
-            <h1 style="color:#4a831b;">Pei-Jun Huang</h1>
-            <p class="blue-text" style="font-size: 24px; margin-top:12px;">黄珮君 &nbsp; <span style="font-size:75%;">&#9733;</span> &nbsp; they/them</p>
-            <p style="font-size: 20px; margin-top:12px;">computational astrophysicist-in-training</p>
+        <div class="flex-children">
+            <div id="headline">
+                <h1 style="color:#4a831b;">Pei-Jun Huang</h1>
+                <p class="blue-text" style="font-size: 24px; margin-top:12px;">黄珮君 &nbsp; <span style="font-size:75%;">&#9733;</span> &nbsp; they/them</p>
+                <p style="font-size: 20px; margin-top:12px;">computational astrophysicist-in-training</p>
+            </div>
         </div>
     </div>
 
-    <div class="flex-wrapper" style="justify-content: space-between;">
-        <div class="flex-children" style="min-width:280px; flex-grow:2; ">
+    <div class="flex-wrapper">
+        <div class="flex-children" id="education" style="min-width:280px; flex-grow:2; ">
             <h2 class="blue-text">Education</h2>
             <div style="margin-top:12px;">
                 <p style="font-size: 110%; color:#ce34ae; margin-bottom: 6px;">PhD in Astronomy & Astrophysics</p>
@@ -43,7 +66,7 @@
             </div> 
         </div>
 
-        <div class="flex-children contact-card" style="min-width:320px; flex-grow:1; text-align: left;">
+        <div class="flex-children contact-card">
             <h2 class="blue-text">Contact</h2>
             
             <div style="margin-top:5px;">

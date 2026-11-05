@@ -10,9 +10,9 @@
 
 	/* Smooth scrolliing when anchor links pressed */
 	scroll-behavior: smooth;
-    font-family: VG5000;
+    font-family: "VG5000";
     letter-spacing: 0.5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 [contenteditable="true"]:active, [contenteditable="true"]:focus
@@ -55,7 +55,7 @@
     src: url(fonts/louise-regular.otf);
 }
 @font-face {
-    font-family: VG5000;
+    font-family: "VG5000";
     src: url(fonts/VG5000-Regular.otf);
 }
 /* variable fonts */
@@ -96,7 +96,6 @@ h2 {
 .blue-text {
     color:#3456ff;
 }
-
 
 a:link {
     color: #ce34ae;
@@ -150,19 +149,13 @@ ul {
 }
 .flex-children {
     display: inline-block;
-    font-size: 16px;
+    align-self:center;
     flex: 1;
 }
 
 
 
 /* Landing page */
-.site-title {
-    font-size: 12vw;
-    color: #3b6f10;
-    font-family: "Interstellar Medium";
-    font-variation-settings: "STAR" 100;
-}
 .dj-tag {
     text-align: center; 
     position: sticky;
@@ -172,32 +165,125 @@ ul {
     margin: 12px;
 }
 .info-box-wrapper {
-    padding-top: 0;
-    padding-bottom: calc(var(--landing-padding)*0.75);
-    padding-left: var(--landing-padding);
-    padding-right: var(--landing-padding);
+    margin-top: 0;
+    margin-bottom: calc(var(--landing-padding)*0.75);
+    margin-left: var(--landing-padding);
+    margin-right: var(--landing-padding);
 }
 .contact-card {
+    align-self:stretch; /*TODO: take this out if needed*/
+    text-align: left;
     background-color:#c0c9f6; 
-    border-radius: 20px; 
+    /* border-radius: 20px;  */
     outline: 6px dotted #3456ff;
     outline-offset: -3px;
     padding: 32px;
+    min-width:320px; 
+
+    transition: transform 0.5s;
 }
-.headline {
-    align-self: center; 
+.contact-card:hover{
+    transform: rotate(5deg);
+}
+#headline {
     min-width:320px; 
     flex-grow:2; 
-    text-align: right; 
+    text-align: left; 
+}
+#image-of-me {
+    text-align: right;
+    flex-grow: 0;
+    transition: 0.5s;
+}
+#image-of-me:hover {
+    transform: rotate(-5deg);
+}
+#image-of-me img {
+    height: 320px;
+    background-color: #3456ff; 
+    /* border-radius: 25px;  */
+    border: 6px solid #ce34ae;
+}
+#education {
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding-left: var(--landing-padding);
+    padding-right: var(--landing-padding);
+    margin: 0px;
+    justify-content: space-around;
+    gap: 40px;
+    /* background-color: red; */
+}
+.homepage-link{
+    /* background:green;  */
+    padding:12px; 
+    text-align:left;
+}
+@keyframes homepageLinkAnimation {
+    from {font-variation-settings: "wght" 100;}
+    to {font-variation-settings: "wght" 50;}
+}
+.homepage-link a {
+    color:blue; 
+    text-decoration: none;
+    font-size: 32px;
+    font-family: mimoid;
+    font-variation-settings: "wght" 90;
+    animation: 4s infinite alternate homepageLinkAnimation;
+}
+.nav-bar-icon {
+    display: grid;
+    width: 85px; 
+    height: 85px; 
+
+    text-align: center;
+    place-items: center;
+
+    background-image: url("ass/green-star.png");
+    background-size:cover;
+    /* background-color:blue; */
+    color:#ce34ae;
+    transition: 0.5s ;
+}
+.nav-bar-icon:hover {
+    transform: rotate(5deg) scale(120%);
+    color:#eb64d0;
+}
+.nav-bar-link {
+    text-decoration: none;
 }
 
 
 /* adjustments for small screens */
 @media only screen and (max-width: 500px){
+    :root{
+        --landing-padding: 32px;
+    }
+    * {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 48px; 
+    }
+    h2 {
+        font-size: 24px;
+    }
     #image-of-me {
         text-align:center;
     }
+    .nav-bar{
+        gap:14px;
+    }
     .headline {
         text-align:center;
+    }
+    .contact-card {
+        text-align: left;
+        min-width: 256px; 
+    }
+    .nav-bar {
+        justify-content:end;
     }
 }
