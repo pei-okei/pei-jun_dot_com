@@ -20,6 +20,9 @@
     border:none;
     outline:none;
 }
+img, canvas {
+  image-rendering: pixelated;
+}
 
 
 
@@ -276,39 +279,43 @@ ul {
     border-radius: 25px; 
     border: 6px solid #ce34ae;
 }
-#education {
-}
 .nav-bar {
+    position:sticky;
+    top:0;
+    left:0;
     display: flex;
     align-items: center;
+    padding-top: calc(var(--landing-padding)/8);
     padding-left: calc(var(--landing-padding)/4);
     padding-right: calc(var(--landing-padding)/4);
-    margin-top: calc(var(--landing-padding)/8);
     margin-bottom: calc(var(--landing-padding)/2);
     justify-content: space-between;
     gap: 10px;
-    /* background-color: grey; */
+    /* background: linear-gradient(0deg, rgba(0,0,0,0), #3456ff); */
+    /* background-color: #584654; */
+    z-index: 100;
 }
 .homepage-icon{
     /* background-color:green; */
     text-align:left;
-    flex-grow: 5;
+    flex-grow: 4;
+    white-space: nowrap;
 }
 .homepage-icon a {
     color:#3456ff; 
     text-decoration: none;
-    font-size: 36px;
+    font-size: 42px;
     font-family: mimoid;
-    font-variation-settings: "wght" 100;
+    font-variation-settings: "wght" 200;
     transition-duration: 0.5s;
-    letter-spacing:-7%;
+    letter-spacing:-4%;
+    text-shadow: 0px 0px 2px #e0e0ff;
+    text-shadow: 
+        -2px -2px 0 #e0e0ff,  2px -2px 0 #e0e0ff, -2px  2px 0 #e0e0ff,  2px  2px 0 #e0e0ff,
+        0px -2px 0 #e0e0ff,  0px  2px 0 #e0e0ff, -2px  0px 0 #e0e0ff,  2px  0px 0 #e0e0ff;
 }
 .homepage-icon a:hover {
     font-variation-settings: "wght" -100;
-    letter-spacing: -10%;
-    font-size:42px;
-    color:#3456ff; 
-    text-shadow: 0 0 5px #3456ff;
 }
 .nav-bar-icon{
     /* background-color:blue; */
@@ -322,8 +329,9 @@ ul {
     background-image: url("./ass/blue-star-1.png");
 }
 .nav-bar-text {
-    font-family: ClimateCrisis;
-    font-variation-settings: "YEAR" 1990;
+    font-size: 24px;
+    font-family: Tiny5Duo;
+    font-variation-settings: "wdth" 80, "wght" 450, "BLED" 20, "JITT" 0, "ROND" 100;
     display: grid;
     height: 50px; 
 
@@ -334,11 +342,12 @@ ul {
     transition: 0.5s ;
 
     word-spacing:-16%;
+    line-height: 80%;
 }
 .nav-bar-text:hover {
     letter-spacing: 15%;
-    font-variation-settings: "YEAR" 2030;
-    color:#3456ff;
+    color:#64ae28;
+    font-variation-settings: "wdth" 80, "wght" 450, "BLED" 50, "JITT" 100, "ROND" 0;
 }
 .nav-bar-link {
     text-decoration: none;
