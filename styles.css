@@ -269,7 +269,7 @@ ul {
     text-align: right;
     flex-grow: 0;
     transition: 0.5s;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 #image-of-me-bg {
     height: 320px;
@@ -288,8 +288,8 @@ ul {
 #green-crest {
     z-index:5;
     position:absolute;
-    height: 240px;
-    left: -20px;
+    height: 330px;
+    left: -24px;
     top: -6px;
     transition-duration: 5s;
 }
@@ -379,7 +379,13 @@ ul {
 
 
 /* adjustments for small screens */
-@media only screen and (max-width: 500px){
+@keyframes spinning {
+  0% {transform: rotate(0deg);}
+  33% {transform: rotate(120deg);}
+  67% {transform: rotate(240deg);}
+  100% {transform: rotate(360deg);}
+}
+@media only screen and (max-width: 800px){
     :root{
         --landing-padding: 32px;
     }
@@ -394,6 +400,12 @@ ul {
     }
     #image-of-me {
         text-align:center;
+    }
+    #green-crest {
+        animation: 24s linear infinite spinning;
+    }
+    #image-of-me-box {
+        margin-top: 24px;
     }
     .nav-bar{
         gap:14px;
