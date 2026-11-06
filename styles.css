@@ -207,9 +207,7 @@ ul {
     display: flex;
     flex-flow:row wrap; 
     align-items: stretch; 
-    justify-content: space-around;
-    gap: 40px;
-    margin:var(--landing-padding);
+    justify-content: space-between;
 }
 .flex-children {
     display: inline-block;
@@ -301,13 +299,15 @@ ul {
     top:0;
     left:0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding-top: calc(var(--landing-padding)/8);
+    padding-top: calc(var(--landing-padding)/4);
     padding-left: calc(var(--landing-padding)/4);
     padding-right: calc(var(--landing-padding)/4);
     margin-bottom: calc(var(--landing-padding)/2);
     justify-content: space-between;
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: -40px;
     /* background: linear-gradient(0deg, rgba(0,0,0,0), #e0e0ff); */
     /* background-color: #584654; */
     z-index: 100;
@@ -327,16 +327,22 @@ ul {
     transition-duration: 0.5s;
     letter-spacing:-4%;
     text-shadow: 
-        -2px -2px 0 #e0e0ff,  2px -2px 0 #e0e0ff, -2px  2px 0 #e0e0ff,  2px  2px 0 #e0e0ff,
-        0px -2px 0 #e0e0ff,  0px  2px 0 #e0e0ff, -2px  0px 0 #e0e0ff,  2px  0px 0 #e0e0ff;
+        -3px -3px 0 #e0e0ff,  3px -3px 0 #e0e0ff, -3px  3px 0 #e0e0ff,  3px  3px 0 #e0e0ff,
+        0px -3px 0 #e0e0ff,  0px  3px 0 #e0e0ff, -3px  0px 0 #e0e0ff,  3px  0px 0 #e0e0ff;
 }
 .homepage-icon a:hover {
     font-variation-settings: "wght" -100;
 }
+#subpages-flex-wrapper{
+    justify-content: flex-end;
+    flex-grow:3;
+    column-gap:20px;
+
+}
 .nav-bar-icon{
     /* background-color:blue; */
     background-size: 100% 100%;
-    flex-grow:3;
+    flex-grow:1;
 }
 #astrophys-icon{
     background-image: url("./ass/blue-star-2.png");
@@ -368,12 +374,35 @@ ul {
 .nav-bar-link {
     text-decoration: none;
 }
+#pink-star{
+    position:absolute; 
+    width:88px; 
+    right: 12px; 
+    bottom: -16px;
+}
 
 
 
 /* Astrophysics page */
 .project-box {
     margin:var(--research-margin);
+}
+.project-content {
+    margin-top: 14px; 
+    gap: 20px;
+}
+.project-text{
+    align-self:flex-start;
+    vertical-align: top;
+}
+.project-text p {
+    margin-bottom: 8px;
+}
+.project-image{
+    min-width:400px;
+}
+.project-image img{
+    width:100%;
 }
 
 
@@ -401,6 +430,8 @@ ul {
         text-align:center;
     }
     #green-crest {
+        height: 290px;
+        left:-10px;
         animation: 24s linear infinite spinning;
     }
     #image-of-me-box {
@@ -412,14 +443,14 @@ ul {
     .headline {
         text-align:center;
     }
-    .project-grid-wrapper{
-        grid-template-columns: 1fr;
-    }
     .contact-card {
         text-align: left;
         min-width: 256px; 
     }
     .nav-bar {
         justify-content:end;
+    }
+    #pink-star{
+        width:67px;
     }
 }

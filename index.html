@@ -16,34 +16,39 @@
 </head>
 <!-- <body style="background-color:#d4d6f8;"> -->
 <body style="background-color:#e0e0ff;">
-    <div class="nav-bar" >
+    <div class="nav-bar">
 
         <div class="homepage-icon">
             <a href=".">pei-jun.com</a>
         </div>
 
-        <div class="nav-bar-icon" id="astrophys-icon">
-            <a href="./astrophysics/" target="_self" class="nav-bar-link">
-                <div class="nav-bar-text">
-                    astro + <br>
-                    physics
-                </div>
-            </a>
+        <div class="flex-wrapper" id="subpages-flex-wrapper">
+            <div class="nav-bar-icon" id="astrophys-icon">
+                <a href="./astrophysics/" target="_self" class="nav-bar-link">
+                    <div class="nav-bar-text">
+                        astro + <br>
+                        physics
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-bar-icon" id="art-design-icon">
+                <a href="./art_and_design/" target="_self" class="nav-bar-link">
+                    <div class="nav-bar-text">
+                        art + <br>
+                        design
+                        <!-- <img src="ass/me_with_cats.png" style="top:0px;"> -->
+                    </div>
+                </a>
+            </div>
         </div>
-        
-        <div class="nav-bar-icon" id="art-design-icon">
-            <a href="./art_and_design/" target="_self" class="nav-bar-link">
-                <div class="nav-bar-text">
-                    art + <br>
-                    design
-                    <!-- <img src="ass/me_with_cats.png" style="top:0px;"> -->
-                </div>
-            </a>
-        </div>
-
     </div>
 
-    <div class="flex-wrapper" style="row-gap: 28px; column-gap:120px; margin-top:0;">
+
+
+
+
+    <div class="flex-wrapper" style="row-gap: 28px; column-gap:120px; margin-top:0; margin:var(--landing-padding);">
         <div class="flex-children" id="image-of-me-box" style="position:relative;">
             <!-- <img src="ass/me_with_cats.png"> -->
             <img src="ass/pei-grad-pic.png" id="image-of-me">
@@ -60,7 +65,7 @@
         </div>
     </div>
 
-    <div class="flex-wrapper">
+    <div class="flex-wrapper" style="gap: 40px; margin:var(--landing-padding);">
         <div class="flex-children" id="education" style="min-width:280px; flex-grow:2; ">
             <h2 class="blue-text">Education</h2>
             <div style="margin-top:12px;">
@@ -75,7 +80,8 @@
             </div> 
         </div>
 
-        <div class="flex-children contact-card">
+        <div class="flex-children contact-card" style="position:relative;">
+            <img src="ass/pink-star.png" id="pink-star">
             <h2 class="blue-text">Contact</h2>
             
             <div style="margin-top:5px;">
@@ -106,6 +112,7 @@
                 &nbsp; 
                 <a class="contacts-links" target="_blank" href="https://www.linkedin.com/in/peijun-huang/">link to my Linkedin </a> 
             </div>
+
         </div>
     </div>
 

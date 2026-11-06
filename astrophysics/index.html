@@ -15,28 +15,31 @@
     <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 <body style="background-color:#e0e0ff;">
-    <div class="nav-bar" >
+    <div class="nav-bar">
 
         <div class="homepage-icon">
             <a href="..">pei-jun.com</a>
         </div>
 
-        <div class="nav-bar-icon" id="astrophys-icon">
-            <a href="../astrophysics/" target="_self" class="nav-bar-link">
-                <div class="nav-bar-text">
-                    astro + <br>
-                    physics
-                </div>
-            </a>
-        </div>
-        
-        <div class="nav-bar-icon" id="art-design-icon">
-            <a href="../art_and_design/" target="_self" class="nav-bar-link">
-                <div class="nav-bar-text">
-                    art + <br>
-                    design
-                </div>
-            </a>
+        <div class="flex-wrapper" id="subpages-flex-wrapper">
+            <div class="nav-bar-icon" id="astrophys-icon">
+                <a href="../astrophysics/" target="_self" class="nav-bar-link">
+                    <div class="nav-bar-text">
+                        astro + <br>
+                        physics
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-bar-icon" id="art-design-icon">
+                <a href="../art_and_design/" target="_self" class="nav-bar-link">
+                    <div class="nav-bar-text">
+                        art + <br>
+                        design
+                        <!-- <img src="ass/me_with_cats.png" style="top:0px;"> -->
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -48,8 +51,8 @@
     <div class="project-box">
         <p class="project-title"> Roman grism denoising <span style="font-size:inherit; color:#3456ff">[Ongoing]</span></p>
         
-        <div class="project-grid-wrapper" style="margin-top: 14px;">
-            <div class="grid-children">
+        <div class="flex-wrapper project-content">
+            <div class="flex-children project-text">
                 <p>NASA Goddard Space Flight Center</p>
                 <p>PIs: Dr. Sangeeta Malhotra & Dr. James Rhoads</p>
                 
@@ -57,8 +60,9 @@
 
                 [<a target='_blank' href='files/Pei-Jun_Goddard_poster.pdf'>Poster</a>]
             </div>
-            <div class="grid-children">
-                <img src="figures/four_panel_08-03_10-22_5_8e-03.png" style="width:400px;">
+
+            <div class="flex-children project-image">
+                <img src="figures/four_panel_08-03_10-22_5_8e-03.png">
             </div>
         </div>
     </div>
@@ -66,12 +70,12 @@
     <div class="project-box">
         <p class="project-title">Open quantum systems</p>
         
-        <div class="project-grid-wrapper" style="margin-top: 14px;">
-            <div class="grid-children">
-                [TODO: insert image here]
+        <div class="flex-wrapper project-content">
+            <div class="flex-children project-image" style="min-width:100px;max-width:140px; flex-shrink:5;">
+                <img src="./figures/qunet.png">
             </div>
 
-            <div class="grid-children">
+            <div class="flex-children project-text" style="flex-shrink:1;">
                 <p>Penn State University Physics REU 2025</p>
                 <p>PI: Prof. Sarah Shandera</p>
                 
@@ -85,12 +89,16 @@
         </div>
     </div>
 
+
+
+
     <div class="project-box">
         <p class="project-title">Measuring the half-light radius of the Tucana Dwarf galaxy</p>
         
-        <div class="project-grid-wrapper" style="margin-top: 14px;">
-            <div class="grid-children">
+        <div class="flex-wrapper project-content">
+            <div class="flex-children project-text">
                 <p>Brown University Department of Physics</p>
+                
                 <p>PI: Prof. Ian Dell'Antonio</p>
                 
                 <p>[TODO: insert description]</p>
@@ -98,25 +106,28 @@
                 [<a target="_blank" href="https://arxiv.org/abs/2512.12027">arXiv preprint</a>]
             </div>
 
-            <div class="grid-children">
-                [TODO: insert image here]
+            <div class="flex-children project-image">
+                <img src="./figures/hlr_overplot_lovoccs.png">
             </div>
         </div>
     </div>
 
+
+
+
     <div class="project-box">
         <p class="project-title">Neural network emulation for CMB spectra with neutrino parameters</p>
         
-        <div class="project-grid-wrapper" style="margin-top: 14px;">
-            <div class="grid-children">
-                [TODO: insert image here]
+        <div class="flex-wrapper" style="margin-top: 14px; gap: 20px;">
+            <div class="flex-children project-image">
+                <p>INSERT IMAGE</p>
             </div>
 
-            <div class="grid-children">
-                <p>Brown University Department of Physics</p>
-                <p>PI: Prof. Ian Dell'Antonio</p>
+            <div class="flex-children project-text">
+                <p>Kavli Institute for Particle Astrophysics & Cosmology (KIPAC) @ SLAC Natl. Lab, Stanford</p>
+                <p>PI: Prof. W.L. Kimmy Wu</p>
                 
-                <p>[TODO: insert description]</p>
+                <p>INSERT DESCRIPTION</p>
 
                 [<a target="_blank" href="https://arxiv.org/abs/2512.12027">arXiv preprint</a>]
             </div>
