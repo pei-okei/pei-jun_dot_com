@@ -225,24 +225,20 @@ ul {
 .nav-bar {
     display: flex;
     align-items: center;
-    padding-left: var(--landing-padding);
-    padding-right: var(--landing-padding);
-    margin: 0px;
-    justify-content: space-around;
-    gap: 40px;
-    /* background-color: red; */
+    padding-left: calc(var(--landing-padding)/4);
+    padding-right: calc(var(--landing-padding)/4);
+    margin-bottom: calc(var(--landing-padding)/2);
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: grey; */
 }
-.homepage-link{
-    /* background:green;  */
-    padding:12px; 
+.homepage-icon{
+    /* background-color:green; */
     text-align:left;
+    flex-grow: 9;
 }
-/* @keyframes homepageLinkAnimation {
-    from {font-variation-settings: "wght" 100;}
-    to {font-variation-settings: "wght" 50;}
-} */
-.homepage-link a {
-    color:blue; 
+.homepage-icon a {
+    color:#3456ff; 
     text-decoration: none;
     font-size: 32px;
     font-family: mimoid;
@@ -250,32 +246,36 @@ ul {
     transition-duration: 0.5s;
     /* animation: 4s infinite alternate homepageLinkAnimation; */
 }
-.homepage-link a:hover {
+.homepage-icon a:hover {
     font-variation-settings: "wght" 20;
     letter-spacing: 12%;
-    color:#4a831b; /*TODO: beautify*/
-    text-shadow: 0 0 3px #ce34ae;
+    color:#4a831b; 
+    text-shadow: 0 0 5px #93e451;
 }
-.nav-bar-icon {
+.nav-bar-icon{
+    /* background-color:blue; */
+    background-size: 100% 100%;
+    flex-grow:3;
+}
+#astrophys-icon{
+    background-image: url("./ass/green-star-2.png");
+}
+#art-design-icon{
+    background-image: url("./ass/green-star-3.png");
+}
+.nav-bar-text {
+    font-family: SCBitMap;
     display: grid;
-    width: 200px; 
-    height: 25px; 
+    height: 50px; 
 
     text-align: center;
     place-items: center;
 
-    /* background-image: url("ass/star-1.svg");
-    background-size: 100% 100%; */
-    /* background-color:blue; */
     color:#ce34ae;
     transition: 0.5s ;
 }
-.nav-bar-icon img {
-    /* TODO Fix this shit */
-    object-fit: fill;
-}
-.nav-bar-icon:hover {
-    transform: rotate(5deg) scale(120%);
+.nav-bar-text:hover {
+    letter-spacing: 12%;
     color:#eb64d0;
 }
 .nav-bar-link {
