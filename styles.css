@@ -61,23 +61,79 @@
 /* variable fonts */
 @font-face {
     font-family: "Interstellar Medium";
-    src: url(fonts/InterstellarMediumVF.ttf); /* variable axis: "STAR", 0-100 */
+    src: url(fonts/InterstellarMediumVF.ttf); 
+    /* variable axis: "STAR", 0-100 */
 }
 @font-face {
     font-family: mimoid;
-    src: url(fonts/MimoidVF.ttf); /* variable axis: "wght", -100-100 */
+    src: url(fonts/MimoidVF.ttf); 
+    /* variable axis: "wght", -100-100 */
 }
 @font-face {
     font-family: Lineal;
-    src: url(fonts/LinealVF.ttf); /* variable axis: "wght", 0-1500 */
+    src: url(fonts/LinealVF.ttf); 
+    /* variable axis: "wght", 0-1500 */
 }
 @font-face {
     font-family: Sligoil;
-    src: url(fonts/SligoilVF.ttf); /* variable axis: "wght", 90-120 */
+    src: url(fonts/SligoilVF.ttf); 
+    /* variable axis: "wght", 90-120 */
 }
 @font-face {
     font-family: SCBitMap;
     src: url(fonts/NISC18030.ttf);
+}
+@font-face {
+    font-family: ClimateCrisis;
+    src: url(fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf);
+    /* variable axis: "Year", 1990-2050*/
+}
+@font-face {
+    font-family: Fredoka;
+    src: url(fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+    /* variable axes: 
+    "wdth", 75-125
+    "wght", 300-700
+    */
+}
+@font-face {
+    font-family: JetBrains;
+    src: url(fonts/JetBrainsMono-VariableFont_wght.ttf);
+    /* variable axis:"wght", 100-800 */
+}
+@font-face {
+    font-family: JetBrains;
+    src: url(fonts/JetBrainsMono-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+@font-face{
+    font-family:Tiny5Duo;
+    src:url(fonts/Tiny5Duo-VariableFont_BLED\,JITT\,ROND\,wdth\,wght.ttf);
+    /* variable axes:
+    "wdth" 50-200
+    "wght" 100-900
+    "BLED" 0-100
+    "JITT" 0-100
+    "ROND" 0-100
+    */
+}
+@font-face{
+    font-family:Tiny5Duo;
+    src:url(fonts/Tiny5Duo-Italic-VariableFont_BLED\,JITT\,ROND\,wdth\,wght.ttf);
+    font-style:italic;
+}
+@font-face {
+    font-family: Unbounded;
+    src: url(fonts/Unbounded-VariableFont_wght.ttf);
+    /* variable axis: "wght" 200-900 */
+}
+@font-face{
+    font-family: Workbench;
+    src: url(fonts/Workbench-Regular-VariableFont_BLED\,SCAN.ttf)
+    /* variable axes:
+    "BLED" 0-100
+    "SCAN" -53-100
+    */ 
 }
 
 
@@ -199,7 +255,7 @@ ul {
     transition: transform 0.5s;
 }
 .contact-card:hover{
-    transform: rotate(5deg);
+    transform: rotate(1.4deg);
 }
 #headline {
     min-width:320px; 
@@ -212,7 +268,7 @@ ul {
     transition: 0.5s;
 }
 #image-of-me:hover {
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
 }
 #image-of-me img {
     height: 320px;
@@ -227,6 +283,7 @@ ul {
     align-items: center;
     padding-left: calc(var(--landing-padding)/4);
     padding-right: calc(var(--landing-padding)/4);
+    margin-top: calc(var(--landing-padding)/8);
     margin-bottom: calc(var(--landing-padding)/2);
     justify-content: space-between;
     gap: 10px;
@@ -235,22 +292,23 @@ ul {
 .homepage-icon{
     /* background-color:green; */
     text-align:left;
-    flex-grow: 9;
+    flex-grow: 5;
 }
 .homepage-icon a {
     color:#3456ff; 
     text-decoration: none;
-    font-size: 32px;
+    font-size: 36px;
     font-family: mimoid;
     font-variation-settings: "wght" 100;
     transition-duration: 0.5s;
-    /* animation: 4s infinite alternate homepageLinkAnimation; */
+    letter-spacing:-7%;
 }
 .homepage-icon a:hover {
-    font-variation-settings: "wght" 20;
-    letter-spacing: 12%;
-    color:#4a831b; 
-    text-shadow: 0 0 5px #93e451;
+    font-variation-settings: "wght" -100;
+    letter-spacing: -10%;
+    font-size:42px;
+    color:#3456ff; 
+    text-shadow: 0 0 5px #3456ff;
 }
 .nav-bar-icon{
     /* background-color:blue; */
@@ -258,13 +316,14 @@ ul {
     flex-grow:3;
 }
 #astrophys-icon{
-    background-image: url("./ass/green-star-2.png");
+    background-image: url("./ass/blue-star-2.png");
 }
 #art-design-icon{
-    background-image: url("./ass/green-star-3.png");
+    background-image: url("./ass/blue-star-1.png");
 }
 .nav-bar-text {
-    font-family: SCBitMap;
+    font-family: ClimateCrisis;
+    font-variation-settings: "YEAR" 1990;
     display: grid;
     height: 50px; 
 
@@ -273,10 +332,13 @@ ul {
 
     color:#ce34ae;
     transition: 0.5s ;
+
+    word-spacing:-16%;
 }
 .nav-bar-text:hover {
-    letter-spacing: 12%;
-    color:#eb64d0;
+    letter-spacing: 15%;
+    font-variation-settings: "YEAR" 2030;
+    color:#3456ff;
 }
 .nav-bar-link {
     text-decoration: none;
