@@ -1,1 +1,1 @@
-This is the repo for Pei-Jun's personal website. 
+This is the repo for Pei-Jun's personal website, Pei-Jun.com
