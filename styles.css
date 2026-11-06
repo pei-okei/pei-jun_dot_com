@@ -159,7 +159,7 @@ ul {
 }
 
 /* generic grid wrapper */
-.grid-wrapper {
+.project-grid-wrapper {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 20px;
@@ -312,6 +312,9 @@ ul {
     }
     .headline {
         text-align:center;
+    }
+    .project-grid-wrapper{
+        grid-template-columns: 1fr;
     }
     .contact-card {
         text-align: left;
