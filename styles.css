@@ -265,19 +265,36 @@ ul {
     flex-grow:2; 
     text-align: left; 
 }
-#image-of-me {
+#image-of-me-box {
     text-align: right;
     flex-grow: 0;
     transition: 0.5s;
+    padding-top: 20px;
 }
-#image-of-me:hover {
-    transform: rotate(-2deg);
-}
-#image-of-me img {
+#image-of-me-bg {
     height: 320px;
     background-color: #3456ff; 
     border-radius: 25px; 
     border: 6px solid #ce34ae;
+    z-index: 0;
+}
+#image-of-me {
+    height: 320px;
+    border-radius: 25px; 
+    position:absolute;
+    z-index: 10;
+    pointer-events: none
+}
+#green-crest {
+    z-index:5;
+    position:absolute;
+    height: 240px;
+    left: -20px;
+    top: -6px;
+    transition-duration: 5s;
+}
+#green-crest:hover{
+    transform: rotate(20deg);
 }
 .nav-bar {
     position:sticky;
