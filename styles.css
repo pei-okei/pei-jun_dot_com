@@ -20,7 +20,7 @@
     border:none;
     outline:none;
 }
-img, canvas {
+img, canvas, backdrop {
   image-rendering: pixelated;
 }
 
@@ -32,7 +32,7 @@ img, canvas {
     --research-margin: 40px;
     --blue: #3456ff;
     --pink: #ce34ae;
-    --green: #4a831b;
+    --green: #588f32;
     --bg-pale-blue: #e0e0ff;
     --bg-shade-blue: #c0c9f6;
 }
@@ -187,7 +187,7 @@ body {
     text-align: center; 
     position: sticky;
     font-size: 2px; 
-    color:#8085c0;
+    color: var(--blue);
     top: calc(100vh - 24px);
     margin: 12px;
 }
@@ -205,21 +205,20 @@ body {
     padding-top: calc(var(--landing-padding)/4);
     padding-left: calc(var(--landing-padding)/4);
     padding-right: calc(var(--landing-padding)/4);
-    margin-bottom: calc(var(--landing-padding)/2);
+    padding-bottom: calc(var(--landing-padding)/4);
     justify-content: space-between;
     column-gap: 10px;
     row-gap: -40px;
-    /* background: linear-gradient(0deg, rgba(0,0,0,0), var(--bg-pale-blue)); */
+    /* background: linear-gradient(to bottom, var(--bg-shade-blue), 67%, rgba(0,0,0,0)); */
     z-index: 100;
 }
 .homepage-icon{
-    /* background-color:green; */
     text-align:left;
     flex-grow: 4;
     white-space: nowrap;
 }
 .homepage-icon a {
-    color:var(--blue); 
+    color: var(--blue);
     text-decoration: none;
     font-size: 42px;
     font-family: mimoid;
@@ -233,16 +232,19 @@ body {
 .homepage-icon a:hover {
     font-variation-settings: "wght" -100;
 }
+.homepage-icon a:visited {
+    color: var(--blue);
+}
 #subpages-flex-wrapper{
     justify-content: flex-end;
     flex-grow:3;
     column-gap:20px;
-
 }
 .nav-bar-icon{
     /* background-color:blue; */
     background-size: 100% 100%;
     flex-grow:1;
+    image-rendering: pixelated;
 }
 #astrophys-icon{
     background-image: url("./ass/blue-star-2.png");
@@ -317,7 +319,7 @@ a:visited{
     color:var(--green);
 }
 .contact-icons{
-    fill:var(--gren);
+    fill:var(--green);
     width:14px;
     vertical-align: -10%;
 }
@@ -358,7 +360,7 @@ ul {
     text-align: right;
     flex-grow: 0;
     transition: 0.5s;
-    padding-top: 24px;
+    padding-top: 0px;
 }
 #image-of-me-bg {
     height: 320px;
@@ -377,9 +379,9 @@ ul {
 #green-crest {
     z-index:5;
     position:absolute;
-    height: 330px;
-    left: -24px;
-    top: -6px;
+    height: 360px;
+    left: -32px;
+    top: -12px;
     transition-duration: 5s;
 }
 #green-crest:hover{
