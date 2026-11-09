@@ -379,13 +379,13 @@ ul {
 #green-crest {
     z-index:5;
     position:absolute;
-    height: 360px;
+    height: 340px;
     left: -36px;
     top: -36px;
     transition-duration: 5s;
 }
 #green-crest:hover{
-    transform: rotate(48deg);
+    transform: rotate(-48deg);
 }
 #pink-star{
     position:absolute; 
