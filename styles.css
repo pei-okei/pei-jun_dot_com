@@ -380,12 +380,12 @@ ul {
     z-index:5;
     position:absolute;
     height: 360px;
-    left: -32px;
-    top: -12px;
+    left: -36px;
+    top: -36px;
     transition-duration: 5s;
 }
 #green-crest:hover{
-    transform: rotate(20deg);
+    transform: rotate(48deg);
 }
 #pink-star{
     position:absolute; 
