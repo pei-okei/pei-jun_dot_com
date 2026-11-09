@@ -74,6 +74,17 @@ img, canvas, backdrop {
     font-family: "VG5000";
     src: url(fonts/VG5000-Regular.otf);
 }
+@font-face {
+    font-family: GB18030Bitmap;
+    src: url(fonts/NISC18030.ttf);
+}
+@font-face {
+    font-family: Lubrifont;
+    src: url(fonts/WDXLLubrifontSC-Regular.ttf);
+}
+
+
+
 /* variable fonts */
 @font-face {
     font-family: "Interstellar Medium";
@@ -231,6 +242,7 @@ body {
 }
 .homepage-icon a:hover {
     font-variation-settings: "wght" -100;
+    letter-spacing: 12%;
 }
 .homepage-icon a:visited {
     color: var(--blue);
@@ -255,7 +267,7 @@ body {
 .nav-bar-text {
     font-size: 24px;
     font-family: Tiny5Duo;
-    font-variation-settings: "wdth" 80, "wght" 450, "BLED" 20, "JITT" 0, "ROND" 100;
+    font-variation-settings: "wdth" 100, "wght" 420, "BLED" 10, "JITT" 0, "ROND" 100;
     display: grid;
     height: 50px; 
 
@@ -269,9 +281,10 @@ body {
     line-height: 80%;
 }
 .nav-bar-text:hover {
-    letter-spacing: 15%;
+    word-spacing: 45%;
+    letter-spacing: 35%;
     color:var(--green);
-    font-variation-settings: "wdth" 80, "wght" 450, "BLED" 50, "JITT" 100, "ROND" 0;
+    font-variation-settings: "wdth" 100, "wght" 320, "BLED" 0, "JITT" 100, "ROND" 0;
 }
 .nav-bar-link {
     text-decoration: none;
@@ -290,6 +303,10 @@ h2 {
     font-size: 32px;
     font-family: mimoid;
     font-variation-settings: "wght" 100;
+}
+.zhongwen {
+    font-family: Lubrifont;
+    font-size: 1em;
 }
 .blue-text {
     color:var(--blue);
@@ -344,20 +361,30 @@ ul {
     outline: 6px dotted var(--blue);
     outline-offset: -3px;
     padding: 32px;
-    min-width:320px; 
+    min-width:310px; 
 
     transition: transform 0.5s;
 }
 .contact-card:hover{
     transform: rotate(1.4deg);
 }
+#headline-wrapper{
+    row-gap: 28px; 
+    column-gap:120px; 
+    margin:var(--landing-padding); 
+    margin-top:calc(var(--landing-padding)/2); 
+    justify-content:left;
+}
 #headline {
-    min-width:320px; 
+    min-width: 310px; 
     flex-grow:2; 
     text-align: left; 
 }
+#tagline {
+    font-size: 20px; 
+    margin-top:12px;
+}
 #image-of-me-box {
-    text-align: right;
     flex-grow: 0;
     transition: 0.5s;
     padding-top: 0px;
@@ -443,8 +470,11 @@ ul {
     h2 {
         font-size: 24px;
     }
-    #image-of-me {
-        text-align:center;
+    #headline-wrapper{
+        justify-content:center;
+    }
+    #tagline {
+        font-size: 18px;
     }
     #green-crest {
         height: 290px;
