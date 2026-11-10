@@ -225,7 +225,7 @@ body {
 }
 .homepage-icon{
     text-align:left;
-    flex-grow: 4;
+    flex-grow: 2;
     white-space: nowrap;
 }
 .homepage-icon a {
@@ -249,7 +249,7 @@ body {
 }
 #subpages-flex-wrapper{
     justify-content: flex-end;
-    flex-grow:3;
+    flex-grow:1;
     column-gap:20px;
 }
 .nav-bar-icon{
@@ -257,6 +257,10 @@ body {
     background-size: 100% 100%;
     flex-grow:1;
     image-rendering: pixelated;
+    transition-duration:0.5s;
+}
+.nav-bar-icon:hover{
+    flex-grow:2;
 }
 #astrophys-icon{
     background-image: url("./ass/blue-star-2.png");
@@ -452,10 +456,10 @@ ul {
 
 /* adjustments for small screens */
 @keyframes spinning {
-  0% {transform: rotate(0deg);}
-  33% {transform: rotate(120deg);}
-  67% {transform: rotate(240deg);}
-  100% {transform: rotate(360deg);}
+    0% {transform: rotate(0deg);}
+    33% {transform: rotate(120deg);}
+    67% {transform: rotate(240deg);}
+    100% {transform: rotate(360deg);}
 }
 @media only screen and (max-width: 600px){
     :root{
