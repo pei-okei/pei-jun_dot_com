@@ -209,7 +209,15 @@ body {
     display: none;
     position: absolute;
 }
-
+.paragraph {
+    font-size: 20px;
+    margin-bottom:12px;
+}
+.framed {
+    background-color: var(--blue); 
+    border-radius: 25px; 
+    border: 6px solid var(--pink);
+}
 
 
 /* Nav bar*/
