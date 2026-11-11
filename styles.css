@@ -201,6 +201,14 @@ body {
     top: calc(100vh - 24px);
     margin: 12px;
 }
+.secret-text-container {
+    display: inline-block;
+    position: relative;
+}
+.secret-content {
+    display: none;
+    position: absolute;
+}
 
 
 
@@ -350,6 +358,10 @@ a:visited{
 ul {
     padding-inline-start: 20px;
 }
+.text-with-bg {
+    background-color:var(--pink);
+    color:white;
+}
 
 
 
@@ -435,11 +447,12 @@ ul {
     margin:var(--research-margin);
 }
 .project-content {
-    margin-top: 14px; 
+    margin-top: 24px; 
     gap: 20px;
 }
 .project-title{
-    font-size: 24px;
+    color: var(--green);
+    font-size: 36px;
 }
 .project-text{
     align-self:flex-start;
@@ -449,7 +462,7 @@ ul {
     margin-bottom: 8px;
 }
 .project-image{
-    min-width:400px;
+    min-width:320px;
 }
 .project-image img{
     width:100%;
@@ -520,5 +533,14 @@ ul {
     }
     #pink-star{
         width:67px;
+    }
+    .project-image{
+        min-width:220px;
+    }
+    .project-title {
+        font-size: 24px;
+    }
+    .project-content {
+        margin-top: 18px; 
     }
 }
