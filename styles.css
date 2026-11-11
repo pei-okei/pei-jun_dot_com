@@ -457,6 +457,20 @@ ul {
 
 
 
+/* Art + design page */ 
+.art-projects {
+    margin:var(--landing-padding);
+    margin-top:calc(var(--landing-padding)/4);
+    position: relative;
+    height: 100vw;
+    width: calc(100vw - 2 * var(--landing-padding));
+}
+.art-proj-box {
+    position:absolute;
+}
+
+
+
 /* adjustments for small screens */
 @keyframes spinning {
     0% {transform: rotate(0deg);}
