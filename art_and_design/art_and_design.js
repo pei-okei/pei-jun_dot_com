@@ -42,6 +42,9 @@ function trail (e) {
 
 addEventListener('mousemove', trail);
 
+
+
+
 if (window.innerWidth <= 600) {
 
 } else {
