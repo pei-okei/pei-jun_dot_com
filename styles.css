@@ -34,6 +34,8 @@ img, canvas, backdrop {
     --green: #588f32;
     --bg-pale-blue: #e0e0ff;
     --bg-shade-blue: #c0c9f6;
+    --light-pink: #f188dc;
+    --yellow: #ffd000;
 }
 
 
@@ -183,6 +185,9 @@ img, canvas, backdrop {
     column-gap: 20px;
     row-gap: 20px;
 }
+/* .project-grid-wrapper div {
+    border: 5px solid green;
+} */
 .grid-children {
     display: inline-block;
 }
@@ -201,7 +206,7 @@ body {
     top: calc(100vh - 24px);
     margin: 12px;
 }
-.secret-text-container {
+.secret-container {
     display: inline-block;
     position: relative;
 }
@@ -365,6 +370,7 @@ a:visited{
 }
 ul {
     padding-inline-start: 20px;
+    text-align: left;
 }
 .text-with-bg {
     background-color:var(--pink);
@@ -481,13 +487,19 @@ ul {
 /* Art + design page */ 
 .art-projects {
     margin:var(--landing-padding);
-    margin-top:calc(var(--landing-padding)/4);
+    margin-top:0;
     position: relative;
-    height: 100vw;
+    height: calc(100vh - 2 * var(--landing-padding));
     width: calc(100vw - 2 * var(--landing-padding));
 }
 .art-proj-box {
-    position:absolute;
+    position:relative;
+}
+.little-button{
+    position:absolute; 
+    width: 0.8vh; 
+    height: 0.8vh; 
+    border-radius: 100%; 
 }
 
 

@@ -18,7 +18,7 @@
     <div class="nav-bar">
 
         <div class="homepage-icon">
-            <a href="..">pei-jun.com</a>
+            <a href="..">pei-jun.com <span style="color:var(--green);">art+design</span></a>
         </div>
 
         <div class="flex-wrapper" id="subpages-flex-wrapper">
@@ -42,28 +42,80 @@
             </div>
         </div>
     </div>
-    
 
 
-    <h1 style="margin:var(--landing-padding); color:#3456ff;">This page is currently under construction...</h1>
 
 
-    <div class="art-projects">
-        things to add: 
-        <div class="art-proj-box" style="top:24vw; left:24vw;">
-            cosmotype + ism demo
+    <h1 style="margin:var(--landing-padding); color:#3456ff; position:absolute; top: 30vh; ">This page is currently under construction...</h1>
+
+    <div class="art-projects project-grid-wrapper" style="border:2px #0000ff dotted;">
+
+        <div class="art-proj-box grid-children">
+            <div style="position:relative; top:2.5vh; left:3.7vw;">
+                poster designs:
+                <ul>
+                    <li>
+                        Sally Rave
+                    </li>
+                    <li>
+                        Friendsgiving
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p>
-            hex guesser
-        </p>
 
-        <p>
-            poster designs
-        </p>
+        <div class="art-proj-box secret-container grid-children" id="cosmotype-container">
+            <div style="position:relative; top:2vh; right:3vw; width:26vw; height:20vh;">
+                <iframe loading="lazy" src="https://cosmotype.pei-jun.com" class="framed" style="background-color: none; position:absolute; left:0; width:26vw; height:20vh; z-index:2;"></iframe>
+                <a href="https://cosmotype.pei-jun.com" target="_blank" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; z-index:5;"></a>
+                <div style="position:absolute; top:-1.2vh; left: 1.4vw; width: calc(3.2vw + 3vh); height: 4vh; background-color:var(--pink); z-index:1; border-radius: 10px 10px 0 0;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 2vw; background-color:var(--light-pink); z-index: 4;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 3vw; background-color:var(--yellow); z-index: 4;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 4vw; background-color:var(--green); z-index: 4;"></div>
+                <div class="secret-content" id="cosmotype-secret" style="color: blue; text-align: left; position:absolute; left:27vw; top: 2vh; width: 14vw; height: 12vh; z-index:7;">
+                    <p>cosmotype: a type foundry of fonts that I've made</p>
+                </div>
+            </div>
+        </div>
 
-        <p>
-            traditional painting portfolio 
-        </p>
+        <div class="art-proj-box secret-container grid-children">
+            <div id="hex-guesser-container" style="position:relative; width:24vw; height:18vh; top:-4vh; left:4vw;">
+                <iframe loading="lazy" class="framed" style="background-color: none; position:absolute; left: 0; width:24vw; height: 18vh; z-index:2;" src="https://pei-okei.github.io/website-baby-steps/hex-guess.html#hexcode-text-input"></iframe>
+                <a href="https://pei-okei.github.io/website-baby-steps/hex-guess.html" target="_blank" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; z-index:5;"></a>
+                <div style="position:absolute; top:-1.2vh; left: 0.6vw; width: calc(3.2vw + 3vh); height: 4vh; background-color:var(--pink); z-index:1; border-radius: 10px 10px 0 0;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 1.2vw; background-color:var(--light-pink); z-index: 4;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 2.2vw; background-color:var(--yellow); z-index: 4;"></div>
+                <div class="little-button" style="top:-0.6vh; left: 3.2vw; background-color:var(--green); z-index: 4;"></div>
+                <div class="secret-content" id="hex-guesser-secret" style="color: blue; text-align: left; position:absolute; left:5%; top: 19vh; width: 22vw; height: 8vh; z-index:7;">
+                    <p>my first website ever: I give you a color, you guess the hexcode</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="art-proj-box grid-children">
+            <div style="position:absolute; top: 5vh; left: 5vw;">
+                acrylic
+            </div>
+
+            <div style="position:absolute; top: 16vh; left: 20vw;">
+                watercolor
+            </div>
+
+            <div style="position:absolute; top:24vh; right: 6vw;">
+                paintings
+            </div>
+
+            <div style="position:absolute; bottom:10vh; left: 6vw;">
+                drawings
+            </div>
+
+            <div style="position:absolute; bottom:4vh; right: 6vw;">
+                etc.
+            </div>
+        </div>
     </div>
 
 
@@ -71,4 +123,6 @@
     <div class="dj-tag">
         <p>this website was handmade by a human (Pei-Jun)</p>
     </div>
+
+    <script src="./art_and_design.js"></script>
 </body>
