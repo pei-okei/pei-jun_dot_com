@@ -464,6 +464,13 @@ ul {
     min-width: 310px; 
     flex-grow:2; 
     text-align: left; 
+    h1 {
+        transition-duration:0.5s;
+    }
+    
+}
+#headline h1:hover{
+    transform:rotate(4deg);
 }
 #tagline {
     font-size: 24px; 
@@ -504,7 +511,13 @@ ul {
     width:88px; 
     right: 12px; 
     bottom: -16px;
+    transition-duration: 0.5s;
 }
+#pink-star:hover{
+    transform: scale(1.5) rotate(55deg);
+    transition-duration: 0.5s;
+}
+
 
 
 
