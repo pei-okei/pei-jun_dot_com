@@ -198,6 +198,18 @@ img, canvas, backdrop {
 body {
     background-color: var(--bg-pale-blue);
 }
+html {
+    cursor: url(ass/pointer.png), pointer;
+    image-rendering: pixelated;
+}
+p, h1, h2, h3, h4, h5, h6, span, li, blockquote, .paragraph,
+input[type="text"], input[type="email"], input[type="search"], textarea {
+    cursor: url(ass/text-selector.png), text;
+}
+a {
+    cursor: url("ass/grabber.png"), grab;
+    image-rendering: pixelated;
+}
 .dj-tag {
     text-align: center; 
     position: sticky;
@@ -247,11 +259,15 @@ body {
     text-align:left;
     flex-grow: 2;
     white-space: nowrap;
+    font-size: 42px;
+    column-gap: 20px;
+    row-gap: 0px;
+    justify-content: flex-start;
 }
 .homepage-icon a {
+    flex-grow: 1;
     color: var(--blue);
     text-decoration: none;
-    font-size: 42px;
     font-family: mimoid;
     font-variation-settings: "wght" 200;
     transition-duration: 0.5s;
@@ -312,6 +328,42 @@ body {
 }
 .nav-bar-link {
     text-decoration: none;
+}
+.page-subtitle {
+    display:inline; 
+    font-family: mimoid;
+    color:var(--green);
+    text-align: left;
+    flex-grow: 4;
+}
+
+
+
+/* HAPPY TRAIL -- source: https://codepen.io/lbenmore/pen/qGGNyK*/
+.happyTrail {
+    z-index: 100;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--green);
+    border-radius: 100%;
+    pointer-events: none;
+    filter: blur(2px);
+    
+    animation-duration: 0.48s;
+    animation-name: cursorFade;
+    animation-timing-function: ease;
+}
+@keyframes cursorFade {
+  0% {
+    background: var(--pink);
+  }
+  50% {
+    background: var(--blue);
+  }
+  100% {
+    background: var(--green);
+  }
 }
 
 
@@ -485,7 +537,7 @@ ul {
 
 
 /* Art + design page */ 
-.art-projects {
+#art-projects {
     margin:var(--landing-padding);
     margin-top:0;
     position: relative;
@@ -497,9 +549,26 @@ ul {
 }
 .little-button{
     position:absolute; 
-    width: 0.8vh; 
-    height: 0.8vh; 
+    width: 10px; 
+    height: 10px; 
     border-radius: 100%; 
+}
+#hex-guesser-container {
+    position:relative; 
+    width:480px; 
+    height:260px; 
+    top:12%; 
+    left:10%;
+    iframe {
+        background-color:#cbeae7;
+    }
+}
+#cosmotype-container{
+    position:relative; 
+    top:5%; 
+    left:-3%;
+    width:380px; 
+    height:280px;
 }
 
 
@@ -541,6 +610,14 @@ ul {
     .nav-bar{
         gap:14px;
     }
+    .homepage-icon {
+        font-size: 36px;
+        column-gap:10px;
+        justify-content: space-between;
+    }
+    .page-subtitle {
+        font-size: 80%;
+    }
     .headline {
         text-align:center;
     }
@@ -562,5 +639,8 @@ ul {
     }
     .project-content {
         margin-top: 18px; 
+    }
+    #art-projects {
+        grid-template-columns: auto;
     }
 }

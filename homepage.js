@@ -1,6 +1,9 @@
 const secretIDs = ['Nuomi', 'Mica'];
 
-for (let i = 0; i < secretIDs.length; i++) {
+
+
+function hoverForSecrets() {
+    for (let i = 0; i < secretIDs.length; i++) {
     let secretID = secretIDs[i];
 
     let secretContainer = document.getElementById(secretID.concat('-container'));
@@ -12,5 +15,12 @@ for (let i = 0; i < secretIDs.length; i++) {
     secretContainer.addEventListener('mouseout', function () {
             secretContent.style.display = 'none';
         });
+    }
 }
 
+
+if (window.innerWidth <= 600) {
+    
+} else {
+    hoverForSecrets();
+}
