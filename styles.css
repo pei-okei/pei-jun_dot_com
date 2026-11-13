@@ -207,7 +207,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, blockquote, .paragraph,
 input[type="text"], input[type="email"], input[type="search"], textarea {
     cursor: url(ass/text-selector.png), text;
 }
-a {
+a, .img-comp-slider{
     cursor: url("ass/grabber.png"), grab;
     image-rendering: pixelated;
 }
@@ -577,16 +577,25 @@ ul {
     /* mix-blend-mode: lighten; */
 }
 .img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 1px;
-  height: 100%;
-  background-color: none;
-  border-left: 2px white dashed;
-  /* opacity: 0.7; */
-  /* border-radius: 50%; */
+    position: absolute;
+    z-index: 9;
+    width: 25px;
+    height: 100%;
+    background-color: none;
+    background-image: url("../ass/pale-blue-slider.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+.img-comp-slider::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px; /* Line thickness */
+    height: 100%;
+    background-color: var(--bg-pale-blue);
+    transform: translateX(-50%); /* Ensures exact horizontal center */
 }
 #roman-grism-comparison{
     align-items: space-between; 
