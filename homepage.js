@@ -39,11 +39,10 @@ function trail (e) {
     shouldRun = (!shouldRun);
 }
 
-addEventListener('mousemove', trail);
-
 
 if (window.innerWidth <= 600) {
     
 } else {
     hoverForSecrets();
+    addEventListener('mousemove', trail);
 }

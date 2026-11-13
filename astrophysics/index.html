@@ -53,7 +53,7 @@
         <p class="project-title"> Roman grism denoising <span style="font-size:0.75em; color:#3456ff">[Ongoing]</span></p>
 
         <div class="flex-wrapper project-content">
-            <div class="flex-children project-text">
+            <div class="flex-children project-text" style="min-width:320px;">
                 <p>NASA Goddard Space Flight Center</p>
                 <p>PIs: Dr. Sangeeta Malhotra & Dr. James Rhoads</p>
                 
@@ -62,10 +62,30 @@
                 <p>[<a target='_blank' href='../files/Pei-Jun_Goddard_poster.pdf'>Poster</a>]</p>
             </div>
 
-            <div class="flex-children project-image">
-                <img src="figures/four_panel_08-03_10-22_5_8e-03.png">
+            <div class="flex-children project-image" style="min-width:320px;">
+                <img class="framed" style="background-color:rgba(0,0,0,0); padding:12px;" src="figures/four_panel_08-03_10-22_5_8e-03.png">
+                <p> Figure 1. Description. </p>
+            </div>
+
+        </div>
+
+        <div class="flex-wrapper" id="img-comp-wrapper" style="margin-top: 20px;">
+            <div class="flex-children" style="flex-grow: 1; flex-shrink: 1;">
+                <div class="img-comp-container framed">
+                    <div class="img-comp-img">
+                        <img src="./figures/PA267_f125w.png">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="./figures/PA267_grism-1.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-children" style="place-items: start; flex-grow: 1; flex-shrink: 2;">
+                <p>Figure 2. Description. </p>
             </div>
         </div>
+
     </div>
 
     <div class="project-box">
@@ -76,7 +96,7 @@
                 <img src="./figures/qunet.png">
             </div>
 
-            <div class="flex-children project-text" style="flex-shrink:1;">
+            <div class="flex-children project-text" style="flex-shrink:1; min-width: 200px;">
                 <p>Penn State University Physics REU 2025</p>
                 <p>PI: Prof. Sarah Shandera</p>
                 
