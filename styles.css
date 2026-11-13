@@ -646,6 +646,7 @@ ul {
 @media only screen and (max-width: 600px){
     :root{
         --landing-padding: 32px;
+        --image-comp-size: 280px;
     }
     h1 {
         font-size: 48px; 
