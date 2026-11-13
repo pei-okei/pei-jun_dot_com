@@ -588,7 +588,7 @@ ul {
   /* opacity: 0.7; */
   /* border-radius: 50%; */
 }
-#img-comp-wrapper{
+#roman-grism-comparison{
     align-items: space-between; 
     max-height:600px;
     width: auto; 
@@ -706,7 +706,7 @@ ul {
     #art-projects {
         grid-template-columns: auto;
     }
-    #img-comp-wrapper {
+    #roman-grism-comparison {
         max-height: 340px;
     }
     .img-comp-container {
